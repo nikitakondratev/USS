@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Управленческое сообщество Сибири</title>
+    {% load staticfiles %}
+{#	<link rel="stylesheet" type="text/css" href="static/css/style.css">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'mainApp/css/style.css' %}">
+</head>
+<body>
+	<div class="bg-img">
+		<img src="../../static/mainApp/imgs/background.jpg">
+	</div>
+		<nav class="globalnav">
+			<menu class="menu-main flex-container">
+				<nav class="menu-left">
+					<li><a href="#main">LOGO</a></li>
+					<li><a href="#about" target="_blank">О нас</a></li>
+					<li><a href="#news">Новости</a></li>
+					<li><a href="#contact">Контакты</a></li>
+					<li><a href="#projects">Проекты</a></li>
+					<li><a href="#partners">Партнеры</a></li>
+				</nav>
+				<nav class="menu-right">
+					<li><a href="#search">Поиск</a></li>
+					<li><a href="#personal">Личный кабинет</a></li>
+					<li><a href="#register">Регистрация</a></li>
+					<li><a href="#login">Вход</a></li>
+				</nav>
+			</menu>
+		</nav>
+	<div class="body">
+		<section class="header-main">
+			<p class="title">«Управленческое сообщество Сибири»</p>
+			<p class="subtitle">Управляй и развивай!</p>
+			<button>Стать членом сообщества</button>
+		</section>
+        {% block content %}
+        {% endblock %}
+	</div>
+</body>
